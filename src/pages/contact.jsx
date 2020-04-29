@@ -16,7 +16,8 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-6 mb-5">
-            <form>
+            <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <label htmlFor="exampleInputName">Name</label>
                 <input
