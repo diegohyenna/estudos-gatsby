@@ -1,11 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pagina do Diego`,
+    description: `É uma pagina de estudos sobre gatsby.js`,
+    author: `diegohyenna`,
+    copyright: `Diegohyenna, Todos os direitos reservados.`,
+    siteUrl: `http://localhost:8000`,
+    socialMedia: {
+      github: `https://github.com/diegohyenna`,
+      linkedin: `https://www.linkedin.com/in/diego-martins-362136123/`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,17 +27,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pagina-do-diegohyenna`,
+        short_name: `diegohyenna`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#542c85`,
+        theme_color: `#c9abdb`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
