@@ -22,6 +22,7 @@ const Contact = () => {
                 <label htmlFor="exampleInputName">Name</label>
                 <input
                   type="text"
+                  name="name"
                   className="form-control"
                   id="exampleInputName"
                   placeholder="Seu nome"
@@ -31,6 +32,7 @@ const Contact = () => {
                 <label htmlFor="exampleInputEmail">Email</label>
                 <input
                   type="email"
+                  name="email"
                   className="form-control"
                   id="exampleInputEmail"
                   placeholder="Seu email"
@@ -42,6 +44,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   className="form-control"
+                  name="description"
                   id="exampleInputDescription"
                   rows={3}
                   defaultValue={""}
